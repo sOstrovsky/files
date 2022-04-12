@@ -91,7 +91,7 @@ public class Main {
 
         /*
             task 2
-        */
+         */
 
         GameProgress gameProgress1 = new GameProgress(100, 2, 2, 1.2);
         GameProgress gameProgress2 = new GameProgress(97, 4, 3, 2.1);
@@ -114,5 +114,17 @@ public class Main {
                 };
             }
         }
+
+        /*
+            task 3
+         */
+
+        gameProgress1.openZip(ROOT + "savegames/zip1.zip", ROOT + "savegames/");
+        gameProgress2.openZip(ROOT + "savegames/zip2.zip", ROOT + "savegames/");
+        gameProgress3.openZip(ROOT + "savegames/zip3.zip", ROOT + "savegames/");
+
+        System.out.println(gameProgress1.openProgress(ROOT + "savegames/save1.dat"));
+        System.out.println(gameProgress2.openProgress(ROOT + "savegames/save2.dat"));
+        System.out.println(gameProgress3.openProgress(ROOT + "savegames/save3.dat"));
     }
 }
