@@ -80,7 +80,6 @@ public class Main {
         String completeLog = log.toString();
 
         if (tempFile.exists()) {
-            System.out.println(completeLog);
             try (FileWriter fw = new FileWriter(tempFile)) {
                 fw.write(completeLog);
                 fw.flush();
